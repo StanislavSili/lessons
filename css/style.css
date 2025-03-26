@@ -5,7 +5,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: "Roboto";
     src: url("/fonts/Roboto_Condensed-Bold.ttf") format("truetype");
@@ -13,7 +12,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,23 +19,76 @@
     outline: 0;
     border: 0;
 }
-
 .container {
-    max-width: 1480px;
-}
-
-.container__title {
     max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container__title {
     display: flex;
     justify-content: center;
 }
-
+.container__title {
+    font: 400 36px/100% "Roboto", sans-serif;
+}
 .container__content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-
+    grid-template-columns: repeat(3, 338px);
+    grid-row-gap: 110px;
+    grid-column-gap: 24px;
+    padding: 70px 0 110px 0;
 }
-/*font: 400 24px/140% "Roboto", sans-serif;*/
-
-
+.container__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container__item-marker {
+    padding-bottom: 26px;
+}
+.container__description {
+    font: 700 30px/100% "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.content {
+    max-width: 1280px;
+    display: flex;
+    padding: 52px 80px 0 80px;
+    flex-direction: column;
+    position: relative;
+}
+.content__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 700 36px/100% "Roboto", sans-serif;
+}
+.content__box {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 103px;
+}
+.content__box-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content__quote {
+    width: 248px;
+    font: 700 24px/100% "Roboto", sans-serif;
+    text-align: center;
+    letter-spacing: 0.6px;
+    padding: 35px 0 40px 0;
+}
+.content__description {
+    align-items: center;
+    font: 400 19px/100% "Roboto", sans-serif;
+    text-align: center;
+}
+.content__link{
+    font: 700 18px/100% "Roboto", sans-serif;
+    color: #000;
+    padding: 44px 0 52px 0;
+}
