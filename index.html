@@ -1,1 +1,86 @@
-# lessons
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>lesson-8</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <form class="form">
+    <h1 class="form__title">Форма заявки на работу в зоопарк</h1>
+    <p class="form__subtitle">Пожалуйста, заполните форму. Обязательные поля для заполнения <a>*</a></p>
+    <fieldset class="form__box">
+      <legend class="form__box-title">Контактная информация</legend>
+      <label class="form__box-label">
+        <span class="input__title">Имя <a>*</a></span>
+        <input class="input" type="text" name="name">
+      </label>
+      <label class="form__box-label">
+        <span class="input__title">Телефон</span>
+        <input class="input" type="tel" name="phone">
+      </label>
+      <label class="form__box-label">
+        <span class="input__title">Email <a>*</a></span>
+        <input class="input" type="email" name="email">
+      </label>
+    </fieldset>
+
+    <fieldset class="form__box">
+      <legend class="form__box-title">Персональная информация</legend>
+      <label class="form__box-label">
+        <span class="input__title">Возраст <a>*</a></span>
+        <input class="input" type="number" min="1" max="100" name="age">
+      </label>
+      <label class="form__box-label">
+        <span class="input__title">Пол</span>
+        <select class="input" name="gender">
+          <option>Мужской</option>
+          <option>Женский</option>
+        </select>
+      </label>
+      <label class="form__box-label">
+        <span class="input__title">Перечислите личный качества</span>
+        <textarea class="input__personal" name="personal"></textarea>
+      </label>
+    </fieldset>
+
+    <fieldset class="form__filter">
+      <legend class="form__filter-title">Выберите ваших любимых животных</legend>
+      <label class="form__filter-label">
+        <input class="input__filter" type="checkbox" name="zebra">
+        <span class="input__title">Зебра</span>
+      </label>
+      <label class="form__filter-label">
+        <input class="input__filter" type="checkbox" name="koshak">
+        <span class="input__title">Кошак</span>
+      </label>
+      <label class="form__filter-label">
+        <input class="input__filter" type="checkbox" name="anaconda">
+        <span class="input__title">Анаконда</span>
+      </label>
+      <label class="form__filter-label">
+        <input class="input__filter" type="checkbox" name="human">
+        <span class="input__title">Человек</span>
+      </label>
+      <label class="form__filter-label">
+        <input class="input__filter" type="checkbox" name="elephant">
+        <span class="input__title">Слон</span>
+      </label>
+      <label class="form__filter-label">
+        <input class="input__filter" type="checkbox" name="antelope">
+        <span class="input__title">Антилопа</span>
+      </label>
+      <label class="form__filter-label">
+        <input class="input__filter" type="checkbox" name="pigeon">
+        <span class="input__title">Голубь</span>
+      </label>
+      <label class="form__filter-label">
+        <input class="input__filter" type="checkbox" name="crab">
+        <span class="input__title">Краб</span>
+      </label>
+    </fieldset>
+    <button class="form__submit" type="submit">Отправить информацию</button>
+  </form>
+</body>
+</html>

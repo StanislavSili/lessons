@@ -1,1 +1,49 @@
-# lessons
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+a {
+  color: red;
+}
+.form {
+  padding: 20px;
+}
+.form__subtitle {
+  font-style: oblique;
+}
+.form__box {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  padding: 15px;
+  margin-top: 20px;
+}
+.form__box-label {
+  display: flex;
+  justify-content: space-between;
+  max-width: 350px;
+  padding: 0 0 8px 0;
+}
+.input {
+  width: 250px;
+}
+.input__personal {
+  width: 510px;
+  height: 100px;
+  resize: none;
+}
+.form__submit {
+  padding: 13px;
+  width: 220px;
+  margin-top: 20px;
+}
+.form__filter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  max-width: 800px;
+  padding: 15px;
+  margin-top: 20px;
+}
