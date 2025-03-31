@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+:root {
+  --content-size: calc(50% - 690px);
+}
+
+.catalog {
+  max-width: 1800px;
+  padding: 0 var(--content-size);
+  display: grid;
+  grid-template-columns: repeat(3, 410px);
+  grid-column-gap: 75px;
+  grid-row-gap: 48px;
+}
+.container {
+  max-width: 1380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__icon {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
+  position: absolute;
+  gap: 266px;
+}
+.container__menu {
+  position: static;
+}
+.container__status {
+  padding-left: 203px;
+}
+.container__button {
+  padding: 16px 34px 16px 34px;
+}
+.container__rating {
+  display: flex;
+  flex-direction: row;
+}
+
