@@ -1,0 +1,139 @@
+@media (max-width: 1395px) {
+    .header,
+    .container__info,
+    .slider,
+    .section,
+    .block,
+    .subscription,
+    .banner {
+        --content-size: calc(50% - 600px);
+    }
+
+    .slider {
+        > .slider__block {
+            gap: 0;
+        }
+        > .slider__menu {
+            gap: 150px;
+            display: flex;
+        }
+    }
+
+    .section > .section__menu {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1245px) {
+    .header,
+    .container__info,
+    .slider,
+    .section,
+    .block,
+    .subscription,
+    .banner {
+        --content-size: calc(50% - 500px);
+    }
+
+    .slider > .slider__block {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .subscription__plan {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .block > .section__faq {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .subscription > .subscription__plan {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .header,
+    .container__info,
+    .slider,
+    .section,
+    .block,
+    .subscription,
+    .banner {
+        --content-size: calc(50% - 400px);
+    }
+
+    .main > .container__fon-three {
+        margin-top: 110px;
+    }
+
+    .container__fon-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .slider > .slider__block {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+  	.section > .section__menu {
+      	grid-template-columns: repeat(1, 1fr);
+      	gap: 10px;
+      	width: 100%; 
+  	}
+
+  	.block > .section__faq {
+      	display: grid;
+      	grid-template-columns: repeat(1, 1fr);
+  	}
+
+  	.subscription > .subscription__plan {
+      	grid-template-columns: repeat(1, 1fr);
+  	}
+}
+
+@media (max-width: 740px) {
+  	.header,
+  	.container__info,
+  	.slider,
+  	.section,
+  	.block,
+  	.subscription,
+  	.banner {
+      	--content-size: calc(50% - 300px);
+  	}
+
+  	.header {
+      	flex-direction: column;
+  	}
+      .container__fon-three {
+        
+        > .container__fon-img {
+            width: 150px;
+            height: 150px;
+        }
+      }
+
+  	.slider {
+      	margin-top: 100px;
+
+      	> .slider__block {
+          	grid-template-columns: repeat(2, 1fr);
+      	}
+  	}
+
+  	.footer > .footer__container {
+      	grid-template-columns: repeat(3, 1fr);
+      	padding: 40px;
+      	margin-top: 40px
+  	}
+
+  	.main > .container__fon-img {
+      	width: 160px;
+      	height: 160px;
+  	}
+}
