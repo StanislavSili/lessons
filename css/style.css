@@ -58,11 +58,11 @@ body {
 
 .nav__link {
 	border-radius: 8px;
-	padding: 12px 20px; /* Упрощено */
+	padding: 12px 20px;
 	font: 500 14px/150% 'Manrope', sans-serif;
 	color: #BFBFBF;
 	text-decoration: none;
-	transition: background-color .5s; /* Уточнено свойство перехода */
+	transition: background-color .5s;
 }
 
 .nav__link:hover {
@@ -159,7 +159,7 @@ body {
 .container__info-btn {
 	display: flex;
 	justify-content: center;
-	background-color: #E50000; /* Изменено на background-color */
+	background-color: #E50000;
 	border-radius: 8px;
 	font: 600 14px/150% 'Manrope', sans-serif;
 	padding: 15px;
@@ -611,7 +611,7 @@ body {
 	font: 400 14px/150% 'Manrope', sans-serif;
 	color: #999999;
 
-	> .footer__bottom-capercase {
+	> .footer__bottom-copyright {
 		font: 400 14px/150% 'Manrope', sans-serif;
 		color: #999999;
 		cursor: pointer;
